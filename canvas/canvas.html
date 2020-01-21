@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dibujando con Canvas</title>
+</head>
+<body>
+    <style>
+        .canvas {
+            background-color: black;
+        }
+
+        .input {
+            margin-bottom: 10px;
+        }
+
+        .boton {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <h1>Dibujito</h1>
+    <p>¿Cuántas líneas quieres?</p>
+
+    <input 
+    class='input' 
+    type="text"
+    id='cantidad_lineas' 
+    placeholder='Escribe la cantidad de lineas'
+     />
+
+</br>
+    <input 
+    class='input' 
+    type="text"
+    id='circulito' 
+    placeholder='Escribe un número'
+     />
+</br>
+    <p>Selecciona el color de tu dibujin</p>
+    <button class='boton' type="submit" id='azulito' value='#0000FF'>Azul</button>
+    <button class='boton' type="submit" id='rosita' value='#DF013A'>Rosita</button>
+    <button class='boton' type="submit" id='amarillito' value='#FFFF00'>Amarillo</button>
+    
+</br>
+    <button class='boton' type="submit" id='botoncito'>¡A darle!</button>
+</br>
+
+    <canvas class="canvas" width='300' height='300' id='dibujito'></canvas>
+    <p>Aquí esta tu dibujo, guapetón.</p>
+    <script src="canvas.js"></script>
+</body>
+</html>
