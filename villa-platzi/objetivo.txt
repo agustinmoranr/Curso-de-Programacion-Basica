@@ -1,0 +1,23 @@
+El objetivo de Villa Platzi, es crear un programita que muestre las imágenes
+de un pollito, un cerdo y una vaca (que seran nuestros personajes) en algún lugar random
+y que se repitan en toda el área de un canvas.
+
+problemas...
+    1. ¿Cómo dibujar el mapa de un juego?
+    2. ¿cómo dibujar los personajes?
+    3. cómo definir las posiciones aleatorias? 
+
+Para hacer esto primero debemos aprender sobre Math.random() para que podamos generar una cierta
+cantidad de valores aleatorios (que al final seran nuestros personajes) y luego lograrlos meter
+en un for(o ciclo), para que se generen varios automáticamente.
+
+El algortimo clave de nuestro proyecto es:
+    Math.floor(Math.random()* (maxi - min + 1)) + min
+
+    Math.floor() --> redondea los números decimales hacia el número entero inferior más cercano
+    Math.random() --> genera un número aleatorio entre 0.000001 hasta 9.99999
+    Maxi y min --> son los números que delimitaran el rango de resultados que obtendremo
+                    Es decir que si min = 10 y maxi = 20. El resultado estará suscrito entre 
+                    esos dos valores.
+        
+    *Math.celis()--> redondea los números decimales hacia el número entero superior más cercanos
