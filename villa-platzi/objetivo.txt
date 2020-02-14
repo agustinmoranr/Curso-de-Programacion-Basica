@@ -20,4 +20,22 @@ El algortimo clave de nuestro proyecto es:
                     Es decir que si min = 10 y maxi = 20. El resultado estará suscrito entre 
                     esos dos valores.
         
-    *Math.celis()--> redondea los números decimales hacia el número entero superior más cercanos
+    Math.celis()--> redondea los números decimales hacia el número entero superior más cercano
+
+    var numero_aleatorio; // Almacena el número aleatorio producto de ejecutar la función aleatorio()
+
+// For encargado de generar una cierta canitdad de números aletarorios.
+for(var i=0; i<10; i++) { 
+    numero_aleatorio = aleatorio(-3, 20);
+    document.write(numero_aleatorio + ', ');
+    console.log(numero_aleatorio);
+}
+
+//Esta función recibé como parámetros a min y maxi y su función es la ejecutar un algoritmo
+//que retorna un valor al hazar comprendido entre min y maxi 
+function aleatorio(min, maxi) {
+    var resultado; 
+    resultado = Math.floor(Math.random()* (maxi - min + 1)) + min;
+    return resultado; 
+    }
+//
